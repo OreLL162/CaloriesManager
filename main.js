@@ -11,12 +11,7 @@ import calorieRouter from "./backend/routes/calorie_router.js";
 
 
 dotenv.config();
-const cors = require("cors");
 const app = Express();
-
-app.use(express.json());
-app.use(cors());
-app.options("*", cors());
 
 connectDB();
 
