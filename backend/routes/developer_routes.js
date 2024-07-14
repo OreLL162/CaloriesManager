@@ -3,12 +3,12 @@
 //2. Netanel Zohar, id: 318970340
 
 import Express from 'express';
-import { createDeveloper, getDevelopers } from '../controllers/developer_controller.js';
+import { createNewDev, getDev } from '../controllers/developer_controller.js';
 
 const developerRouter = Express.Router();
 
-developerRouter.get('/about', getDevelopers);
+developerRouter.get('/about', getDev);
 
-developerRouter.post('/createdeveloper', createDeveloper);
+developerRouter.post('/createdeveloper', createNewDev);
 
 export default developerRouter;
